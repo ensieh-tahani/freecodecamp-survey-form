@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build a Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Restaurant Survey Form</h1>
+    <p id="description">Please take 5 minutes to fill this comment card it helps us to improve and serve better as per
+        your taste.</p>
+
+    <form id="survey-form" action="/action_page.php">
+
+        <div class="input-headings">
+            <div>
+                <label for="fname">Name :</label>
+                <input class="form-inputs" type="text" id="name" name="name" placeholder="Please enter your name">
+                <br>
+            </div>
+            <div>
+                <label for="email">Email <span class="required">*</span>:</label>
+                <input class="form-inputs" type="text" id="email" name="email" placeholder="abc@example.com"
+                    required><br><br>
+            </div>
+            <div>
+                <label for="age">Age<span class="required">*</span> :</label>
+                <select class="form-inputs" name="age" id="number" placeholder="How old are you?" required>
+                    <option value=""></option>
+                    <option value="Under-13">Under 13</option>
+                    <option value="13-17">13-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-or-older">55 Or Older</option>
+                </select>
+                <br>
+            </div>
+            <br>
+            <div>
+
+                <label for="date">Day Visited<span class="required">*</span></label><br>
+                <input class="form-inputs" type="date" id="dayVisited" name="day-visited" value="2020-11-01"
+                    min="2020-01-01" max="2021-01-01" required>
+
+                <br>
+            </div>
+
+            <p>Dine In / Take Out <span class="required">*</span>:</p>
+
+            <div class="font-radios">
+                <input type="radio" id="DineIn" name="visited" value="DineIn" required>
+                <label for="DineIn">Dine In</label>
+                <br>
+                <input type="radio" id="TakeOut" name="visited" value="TakeOut">
+                <label for="TakeOut">Take Out</label>
+                <br>
+            </div>
+
+            <p>Food Quality <span class="required">*</span>:</p>
+            <div class="font-radios">
+                <input type="radio" id="foodQuality" name="foodQuality" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="foodQuality" name="foodQuality" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="foodQuality" name="foodQuality" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="foodQuality" name="foodQuality" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+
+
+            <p>Overall Service Quality<span class="required">*</span>:</p>
+            <div class="font-radios">
+
+                <input type="radio" id="serviceQuality" name="serviceQuality" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="serviceQuality" name="serviceQuality" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="serviceQuality" name="serviceQuality" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="serviceQuality" name="serviceQuality" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+
+            <p>Cleanliness<span class="required">*</span>:</p>
+            <div class="font-radios">
+                <input type="radio" id="cleanLiness" name="cleanLiness" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="cleanLiness" name="cleanLiness" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="cleanLiness" name="cleanLiness" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="cleanLiness" name="cleanLiness" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+
+            </div>
+            <p>Order Accuracy<span class="required">*</span>:</p>
+            <div class="font-radios">
+
+                <input type="radio" id="orderAccuracy" name="orderAccuracy" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="orderAccuracy" name="orderAccuracy" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="orderAccuracy" name="orderAccuracy" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="orderAccuracy" name="orderAccuracy" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+            <p>Speed of Service<span class="required">*</span>:</p>
+
+            <div class="font-radios">
+                <input type="radio" id="speedOfService" name="speedOfService" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="speedOfService" name="speedOfService" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="speedOfService" name="speedOfService" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="speedOfService" name="speedOfService" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+            <p>Value <span class="required">*</span>:</p>
+
+            <div class="font-radios">
+                <input type="radio" id="value" name="value" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="value" name="value" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="value" name="value" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="value" name="value" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+            <p>Overall Experience <span class="required">*</span>:</p>
+
+            <div class="font-radios">
+                <input type="radio" id="overallExperience" name="overallExperience" value="Excellent" required>
+                <label for=" Excellent">Excellent</label>
+                <br>
+                <input type="radio" id="overallExperience" name="overallExperience" value="Good">
+                <label for=" Excellent">Good</label>
+                <br>
+                <input type="radio" id="overallExperience" name="overallExperience" value="Average">
+                <label for=" Excellent">Average</label>
+                <br>
+                <input type="radio" id="overallExperience" name="overallExperience" value="Dissatisfied">
+                <label for=" Excellent">Dissatisfied</label>
+                <br>
+            </div>
+            <br>
+            <div>
+                <p>What would you like to see improved?</p>
+
+                <input type="checkbox" id="food" name="food" value="food">
+                <label for="food">Food</label>
+                <br>
+                <input type="checkbox" id="menu" name="menu" value="menu">
+                <label for="menu">Menu</label>
+                <br>
+                <input type="checkbox" id="childrensMenu" name="childrensMenu" value="childrensMenu">
+                <label for="childrensMenu">Childrens menu</label>
+                <br>
+                <input type="checkbox" id="service" name="service" value="service">
+                <label for="service">The service</label>
+                <br>
+                <input type="checkbox" id="decor" name="decor" value="decor">
+                <label for="">Restaurant decor</label>
+                <br>
+                <input type="checkbox" id="events" name="events" value="events">
+                <label for="events">Events</label>
+                <br>
+                <input type="checkbox" id="music" name="music" value="music">
+                <label for="music">Background music</label>
+                <br>
+                <input type="checkbox" id="prices" name="prices" value="prices">
+                <label for="prices">Prices</label>
+                <br>
+                <input type="checkbox" id="onlinePresence" name="onlinePresence" value="onlinePresence">
+                <label for="onlinePresence">Online presence</label>
+                <br>
+            </div>
+
+            <br>
+
+            <label for="textarea">Any comments, questions or suggestions? </label><br><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"
+                placeholder="Enter your comment here..."></textarea><br><br>
+
+
+            <button id="submit" type="submit">Submit</button>
+
+
+
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

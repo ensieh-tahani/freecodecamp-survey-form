@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+body {
+    line-height: 1.5rem;
+    background-color: #1D3557;
+    width: 700px;
+    margin: auto;
+}
+
+#title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+#description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+#survey-form {
+    background: #F1FAEE;
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.input-headings label {
+    font-size: 1.2rem;
+    color: #1D3557;
+    font-weight: bold;
+}
+
+.form-inputs {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    color: #909090;
+    border: 1px solid #457B9D;
+    border-radius: 0.25rem;
+    background: #fff;
+}
+
+.required {
+    color: red;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #1D3557;
+    font-weight: bold;
+}
+
+.font-radios {
+    display: block;
+    padding: 2rem;
+}
+
+textarea {
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #457B9D;
+    border-radius: 10px;
+}
+
+#submit {
+    width: 100%;
+    padding: 15px;
+    background: #E63946;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
